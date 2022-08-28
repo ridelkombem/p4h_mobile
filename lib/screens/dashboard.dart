@@ -17,6 +17,9 @@ class Dashboard extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return SafeArea(
+        child: SizedBox(
+          height: height,
+          width: width,
       child: SingleChildScrollView(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
@@ -49,7 +52,7 @@ class Dashboard extends StatelessWidget {
           ),
         ),
       ),
-    );
+    ));
   }
 }
 

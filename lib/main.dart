@@ -10,6 +10,7 @@ void main() {
   runApp(const MyApp());
 }
 
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -47,9 +48,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        home: const Scaffold(
-          body: ResourceScreen(),
-        ),
+        initialRoute: Dashboard.routeName,
         routes: {
           Dashboard.routeName: (ctx) => const Dashboard(),
           LessonPlanScreen.routeName: (ctx) => const LessonPlanScreen(),
